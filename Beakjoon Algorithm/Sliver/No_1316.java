@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Main{
+//백준 1316 그룹 단어 체커
+public class Test{
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String args[]) {
@@ -32,7 +33,7 @@ public class Main{
 
 			// 이전단어랑 현재랑 다를 경우
 			if(prevWord != nowWord) {
-				// 처음 사용한 단어의 경우, 배열의 경우 초기화 안하면 false로 자동초기화
+				// 처음 사용한 단어의 경우
 				if(AlpaUse[nowWord - 'a'] == false) {
 					AlpaUse[nowWord - 'a'] = true;
 					prevWord = nowWord;
